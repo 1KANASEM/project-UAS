@@ -43,7 +43,7 @@
                                     <button class="btn btn-xs btn-success" data-toggle="modal"
                                         data-target="#edit<?= $value->id ?>"><i class="fa fa-pencil"></i> </button>
                                     <a href="<?= base_url('admin/delete/' . $value->id) ?>"
-                                        onclick="return confirm('Apakah data departemen akan dihapus?')"
+                                        onclick="return confirm('Apakah data admin akan dihapus?')"
                                         class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> </a>
                                 </td>
                             </tr>
@@ -87,7 +87,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-success">Save</button>
             </div>
             <?php echo form_close(); ?>
         </div>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-success">Save</button>
                 </div>
             </div>
             <?php echo form_close(); ?>

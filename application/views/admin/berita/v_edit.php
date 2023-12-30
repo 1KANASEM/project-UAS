@@ -53,7 +53,7 @@
                 <div class="col-md-6">
                     <p></p>
                     <button type="submit" class="btn btn-success">Simpan</button>
-                    <a href="<?= base_url('guru'); ?>" type="submit" class="btn btn-danger">kembali</a>
+                    <a href="<?= base_url('berita'); ?>" type="submit" class="btn btn-danger">kembali</a>
                 </div>
             </div>
 

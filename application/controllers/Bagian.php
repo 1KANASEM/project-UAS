@@ -10,6 +10,7 @@ class Bagian extends CI_Controller {
     }
     public function index() {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
 
         $data = array(
             'title' => 'RTQ Al-Yusro',
@@ -22,6 +23,7 @@ class Bagian extends CI_Controller {
 
     public function add() {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'bagian' => $this->input->post('bagian'),
         );
@@ -32,6 +34,7 @@ class Bagian extends CI_Controller {
 
     public function edit($id_bagian) {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'id_bagian' => $id_bagian,
             'bagian' => $this->input->post('bagian')
@@ -43,6 +46,7 @@ class Bagian extends CI_Controller {
 
     public function delete($id_bagian) {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'id_bagian' => $id_bagian,
         );

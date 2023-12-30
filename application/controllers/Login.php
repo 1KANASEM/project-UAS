@@ -5,7 +5,7 @@ class Login extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->library('user_login');  // Load library user_login
+        $this->load->library('user_login');
     }
 	public function index()
 	{

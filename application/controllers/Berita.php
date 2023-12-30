@@ -118,7 +118,27 @@ class Berita extends CI_Controller
                 $this->session->set_flashdata('pesan', 'Data Berita Berhasil Di Edit !!');
                 redirect('berita');
             }
+
+            $upload_data = array('uploads' => $this->upload->data());
+            $config['image_library'] = 'gd2';
+            $config['source_image'] = './berita/' . $upload_data['uploads']['file_name'];
+            $this->load->library('image_lib', $config);
+
+
+            $berita = $this->m_berita->detail($id);
+            
+
+            $data = array(
+                'id' => $id,
+                'judul' => $this->input->post('judul'),
+                'isi' => $this->input->post('isi'),
+            );
+
+            $this->m_berita->edit($data);
+            $this->session->set_flashdata('pesan', 'Data Berita Berhasil Di Edit !!');
+            redirect('berita');
         }
+
         $data = array(
             'title' => 'RTQ Al-Yusro',
             'title2' => 'Edit Data Berita',

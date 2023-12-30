@@ -12,7 +12,7 @@
             }
 
             echo validation_errors('<div class="alert alert-warning alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>','</div>');
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>', '</div>');
 
             echo form_open_multipart("berita/add");
             ?>
@@ -34,8 +34,8 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label>Isi</label>
-                    <textarea class="form-control" name="isi" id="" cols="30" rows="10" placeholder="masukkan Isi"
-                        required></textarea>
+                    <textarea class="ckeditor" id="ckeditor" name="isi" 
+                        placeholder="masukkan Isi" required></textarea>
                 </div>
             </div>
 

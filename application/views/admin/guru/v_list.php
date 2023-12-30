@@ -33,8 +33,8 @@
                                 <td>
                                     <?= $no++; ?>
                                 </td>
-                                <td>
-                                    <img src="<?= base_url('foto_guru/' .$value->foto)?>" width="100px">
+                                <td class="text-center">
+                                    <img src="<?= base_url('foto_guru/' .$value->foto)?>"  width="100px" height="100px">
                                 </td>
                                 <td>
                                     <?= $value->nama; ?>

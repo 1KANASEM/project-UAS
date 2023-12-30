@@ -1,11 +1,15 @@
 <body>
 
+<?php
+$setting = $this->m_setting->detail();
+?>
+
 <div id="wrapper">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><?= $title?></a>
+            <a class="navbar-brand" href="<?= base_url('admin') ?>"><?= $setting->nama_rtq ?></a>
         </div>
 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,4 +25,4 @@
                     <i class="fa fa-user fa-fw"></i> <?= $this->session->userdata('nama');?></a>
                 
             </li>
-        </ul>
+        </ul><br><br>

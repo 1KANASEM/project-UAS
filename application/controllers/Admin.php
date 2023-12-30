@@ -13,6 +13,7 @@ class Admin extends CI_Controller
     public function index()
     {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
 
         $data = array(
             'title' => 'RTQ Al-Yusro',
@@ -26,6 +27,7 @@ class Admin extends CI_Controller
     public function add()
     {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'nama' => $this->input->post('nama'),
             'username' => $this->input->post('username'),
@@ -42,6 +44,7 @@ class Admin extends CI_Controller
     public function edit($id)
     {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'id' => $id,
             'nama' => $this->input->post('nama'),
@@ -58,6 +61,7 @@ class Admin extends CI_Controller
     public function delete($id)
     {
         $this->user_login->cek_login();
+        $this->user_login->cek_level();
         $data = array(
             'id' => $id,
         );

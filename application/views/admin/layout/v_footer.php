@@ -4,8 +4,6 @@
 </div>
 <!-- /#wrapper -->
 
-<script src="<?= base_url('template/back-end/js/jquery.min.js') ?>"></script>
-
 <!-- jQuery -->
 <script src="<?= base_url('template/back-end/js/jquery.min.js') ?>"></script>
 
@@ -21,7 +19,6 @@
 <!-- DataTables JavaScript -->
 <script src="<?= base_url('template/back-end/js/dataTables/jquery.dataTables.min.js') ?>"></script>
 <script src="<?= base_url('template/back-end/js/dataTables/dataTables.bootstrap.min.js') ?>"></script>
-
 
 <!-- Page-Level Demo Scripts - Tables - Use for reference -->
 <script>

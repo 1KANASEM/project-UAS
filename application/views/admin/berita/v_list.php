@@ -30,7 +30,7 @@
                                 <td>
                                     <?= $no++; ?>
                                 </td>
-                                <td>
+                                <td class="text-center">
                                     <img src="<?= base_url('foto_berita/' .$value->gambar)?>" width="100px" height="100px">
                                 </td>
                                 <td>
